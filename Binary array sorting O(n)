@@ -1,0 +1,15 @@
+ vector<int> SortBinaryArray(vector<int> binArray)
+    {
+        int i = -1, j = binArray.size() - 1;
+        while(true){
+            while(binArray[i] == 0) i++;
+            while(binArray[j] == 1) j--;
+            if(i >= j) return binArray;
+    
+            swap(binArray[i], binArray[j]);
+            i++;
+            j--;
+            
+            
+        }
+    }
